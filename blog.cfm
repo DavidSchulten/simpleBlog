@@ -1,5 +1,5 @@
 <!--- Define folder for blog.cfm --->
-<cfset myDir = expandpath("/studie/testblog/")>
+<cfset myDir = expandpath("/")>
 <cfset myPfad = "#myDir#/artikel">
 <cfif parameterexists(read) is "false">
 <cfdirectory action="list" name="artikel" directory="#myPfad#" sort="name desc">
