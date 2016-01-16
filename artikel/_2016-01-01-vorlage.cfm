@@ -7,7 +7,7 @@
 <cfset aDatum = lsdateformat(aDatum, "dd.mm.yyyy")>
 <!--- Artikelkonfiq --->
 <article>
-	<h2><a href="./?read=<cfoutput>#aLink#</cfoutput>">Hallo Blog</a></h2>
+	<h2><a href="./?read=<cfoutput>#aLink#</cfoutput>">Vorlage</a></h2>
 	<p><small><cfoutput>#adatum#</cfoutput></small></p>
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quam, cum, voluptates officiis non sed eum placeat earum similique modi a mollitia amet velit? Ex tempore asperiores dignissimos est blanditiis!	

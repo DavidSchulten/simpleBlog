@@ -2,12 +2,13 @@
 <cfset aPfad = GetCurrentTemplatePath()>
 <cfset aFile = lcase(GetFileFromPath(aPfad))>
 <cfset aLink = replace(aFile, ".cfm","","ALL")>
-<cfset aLink = replace(aLink, "_","","ALL")>
-<cfset aDatum = left(aLink, 10)>
+<cfset aLink = "./?read=#aLink#">
+<cfset aDatum = replace(aFile, "_","","ALL")>
+<cfset aDatum = left(aDatum, 10)>
 <cfset aDatum = lsdateformat(aDatum, "dd.mm.yyyy")>
 <!--- Artikelkonfiq --->
 <article>
-	<h2><a href="./?read=<cfoutput>#aLink#</cfoutput>">Hallo Blog</a></h2>
+	<h2><a href="<cfoutput>#aLink#</cfoutput>">Zweiter Eintrag</a></h2>
 	<p><small><cfoutput>#adatum#</cfoutput></small></p>
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quam, cum, voluptates officiis non sed eum placeat earum similique modi a mollitia amet velit? Ex tempore asperiores dignissimos est blanditiis!	
