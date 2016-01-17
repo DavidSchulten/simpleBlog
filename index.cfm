@@ -20,7 +20,7 @@ article {
 </head>
 <body>
 	<h1>simpleBlog</h1>
-<cfif parameterexists(read) is "false">
+<cfif StructKeyExists(url,"read") is "false">
 <cfdirectory action="list" name="artikel" directory="#myFolder#" sort="name desc" filter="*.cfm">
 <cfloop query="artikel">
 	<cfif left(name, 1) neq "." and left(name,1) neq "_">
