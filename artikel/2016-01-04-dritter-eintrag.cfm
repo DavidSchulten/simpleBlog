@@ -12,7 +12,7 @@
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quam, cum, voluptates officiis non sed eum placeat earum similique modi a mollitia amet velit? Ex tempore asperiores dignissimos est blanditiis!	
 	</p>
-	<cfif parameterexists("read") is true>
+	<cfif StructKeyExists(url,"read") is true>
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, iusto, quidem inventore earum fugiat optio voluptatem officia praesentium accusamus esse a ullam fugit assumenda modi nemo facilis blanditiis quasi reiciendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, nam architecto quae sunt possimus alias sint est laborum repudiandae minima quidem ipsum ab esse excepturi vero accusantium id ut unde! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, repudiandae, animi, optio, voluptate iure accusantium obcaecati ex eius voluptates eveniet modi reiciendis ratione quaerat ipsum praesentium saepe ducimus eaque. Facere!		
 	</p>
